@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "get up",
+        "description": "get up at 8 am"
+    },
+    {
+        "id": 2,
+        "name": "go to work",
+        "description": "get ready and go to work in the office"
+    },
+    {
+        "id": 3,
+        "name": "have a lunch",
+        "description": "have a lunch break at 1 pm"
+    },
+    {
+        "id": 4,
+        "name": "go back home and chill",
+        "description": "do whatever you want"
+    }
+]

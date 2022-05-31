@@ -7,9 +7,10 @@
         "isolatedModules": true,
         "esModuleInterop": true,
         "skipLibCheck": true,
-        "jsx": "preserve",
+        "jsx": "react",
         "resolveJsonModule": true,
         "moduleResolution": "Node",
+        "sourceMap": true,
         "plugins": [
             {
                 "name": "typescript-plugin-css-modules"

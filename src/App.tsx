@@ -1,24 +1,31 @@
 import React from "react";
 import tasks from "./data/tasks.json";
-import Task from "./components/Task";
-import AppCSS from "./App.module.css";
+import Task from "./components/Task/Task";
+import { List, LogoContainer } from "./AppStyles";
 import Logo from "./assets/Logo.svg";
-import Cart from "./components/Cart";
+import Cart from "./components/Cart/Cart";
 import AppStateProvider from "./components/AppState";
+import GlobalStyle from "./global";
+import ImportantTask from "./components/Task/ImportantTask";
 
 const App = () => {
+  const importantTasks = tasks.filter((el) => el.important);
   return (
     <AppStateProvider>
-      <div className={AppCSS.list}>
+      <GlobalStyle />
+      <List>
+        <LogoContainer>
+          <Logo width={50} />
+        </LogoContainer>
         <Cart />
-        <Logo width={150} />
-
+        {importantTasks &&
+          importantTasks.map((element) => <ImportantTask task={element} />)}
         <ul>
-          {tasks.map((element, index) => (
-            <Task key={index} task={element} />
+          {tasks.map((element) => (
+            <Task key={element.id} task={element} />
           ))}
         </ul>
-      </div>
+      </List>
     </AppStateProvider>
   );
 };

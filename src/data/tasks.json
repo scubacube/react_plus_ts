@@ -17,6 +17,7 @@
     {
         "id": 4,
         "name": "go back home and chill",
-        "description": "do whatever you want"
+        "description": "do whatever you want",
+        "important": true
     }
 ]

@@ -1,7 +1,7 @@
 import React from "react";
 import { TaskItem } from "./TaskStyles";
 import { Props } from "../../types";
-import { useAddToCart } from "../AddToCart";
+import { useAddToCart } from "../useAddToCart";
 
 const Task: React.FC<Props> = ({ task }) => {
   const addItem = useAddToCart();

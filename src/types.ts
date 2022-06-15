@@ -6,7 +6,7 @@ export interface ITask {
   important?: boolean;
 }
 
-export interface Props extends AddToCartProps {
+export interface Props {
   task: ITask;
 }
 

@@ -1,8 +1,8 @@
 import React from "react";
 import { Props } from "../../types";
-import { useAddToCart } from "../AddToCart";
+import { useAddToCart } from "../useAddToCart";
 
-const ImportantTask: React.FC<Props> = ({ task, addToCart }) => {
+const ImportantTask: React.FC<Props> = ({ task }) => {
   const addItem = useAddToCart();
 
   const addTask = () =>
